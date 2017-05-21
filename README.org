@@ -1,0 +1,9 @@
+* installation
+#+BEGIN_SRC shell
+D=nb
+git clone https://github.com/SandStormHoldings/noodles_blog $D && \
+cd $D && \
+virtualenv -ppython3.5 . && \
+git submodule update --init --recursive && pip install -r requirements.txt && \
+./runserver.py
+#+END_SRC
