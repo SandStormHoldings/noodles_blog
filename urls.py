@@ -33,19 +33,19 @@ def get_map():
 
         user = [
                 Route(None, '/create',
-                      controller='noodles.blog.user_controller',
+                      controller='user_controller',
                       action='add_user'),
                 Route(None, '/detail/:id',
-                      controller='noodles.blog.user_controller',
+                      controller='user_controller',
                       action='detail_user'),
                 Route(None, '/list',
-                      controller='noodles.blog.user_controller',
+                      controller='user_controller',
                       action='list_users'),
                 Route(None, '/delete/:id',
-                      controller='noodles.blog.user_controller',
+                      controller='user_controller',
                       action='delete_user'),
                 Route(None, '/update/:id',
-                      controller='noodles.blog.user_controller',
+                      controller='user_controller',
                       action='update_user'),
                 ]
 
@@ -53,16 +53,16 @@ def get_map():
 
         article = [
                    Route(None, '/create',
-                         controller='noodles.blog.article_controller',
+                         controller='article_controller',
                          action='add_article'),
                    Route(None, '/read/:id',
-                         controller='noodles.blog.article_controller',
+                         controller='article_controller',
                          action='read'),
                    Route(None, '/list',
-                         controller='noodles.blog.article_controller',
+                         controller='article_controller',
                          action='list_articles'),
                    Route(None, '/delete/:id',
-                         controller='noodles.blog.article_controller',
+                         controller='article_controller',
                          action='delete_article'),
                    ]
 

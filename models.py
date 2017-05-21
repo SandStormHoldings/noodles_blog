@@ -8,9 +8,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import validates
 
 
-if os.path.exists("test"):
-    os.remove("test")
-engine = create_engine("postgresql://dmitry:admin@localhost:5432/test")
+import getpass
+username = getpass.getuser()
+engine = create_engine("postgresql:///%s"%username)
 
 
 Base = declarative_base()

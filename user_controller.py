@@ -5,7 +5,7 @@ from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.orm.session import Session
 from webob.exc import HTTPMethodNotAllowed
 
-from blog.core import serialize
+from core import serialize
 from models import User, engine
 from noodles.http import Response
 

@@ -6,9 +6,9 @@ import os
 NO_GEVENT_MONKEYPATCH=False
 DEBUG = True
 TESTING = True
-AUTO_RELOAD = True
+AUTO_STOP = True
 HOST='localhost'
-USE_ALCHEMY_MW = False
+USE_ALCHEMY_MW=False
 
 # Specify the server port
 PORT = 8090
@@ -22,9 +22,7 @@ APP_DIR = os.path.dirname(os.path.abspath(__file__))
 URL_RESOLVER = 'urls'
 
 # Specify controllers modules
-CONTROLLERS = ['controllers', 'noodles.utils.static',
-               'noodles.blog.user_controller',
-               'noodles.blog.article_controller']
+CONTROLLERS = ['controllers','article_controller','user_controller', 'noodles.utils.static']
 
 # Specify Redis-server host there
 REDIS_HOST = 'localhost'

@@ -6,7 +6,4 @@ from noodles.http import Response
 
 
 def index(request):
-    return Response('<h1>Hello, noodles!</h1>')
-
-
-
+    return Response('<h1>Hello, NoodlesFramework!</h1>')
